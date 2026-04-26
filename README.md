@@ -61,6 +61,7 @@ Antes de poder sacarle una "foto" a tu projecto, tenes que hacer esto.
 
 > [!tip] Tip para guardar varios archivos:
 > Podes usar "`git add .`" en lugar del nombre de los archivos para guardar todos los archivos modificados del repo
+> Y si te arrepentis podes tirar `git reset` para sacar los archivos del staging area
 
 2. **`git commit -m "descripción"`:** 
    Acá confirmás que lo que está guardado, le sacas la "foto". 

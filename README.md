@@ -1,16 +1,15 @@
 
  # 🚀 Git para salames _(como yo)_: Para que no te mandes ninguna macana
 
->### Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas. <br><br>La idea es que si no cazás una de Git, con esto salgas jugando.
+Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas. <br>La idea es que si no cazás una de Git, con esto salgas jugando.
  
-> [!note]
-> ### Fuentes:<br>
+> Fuentes:<br>
 > Utilice el libro de [Pro Git](https://git-scm.com/book/es/v2) y la [documentacion oficial de Git](https://git-scm.com/docs) para poder armar este tutorial. 
 > Recomiendo que si queres seguir estudiando mas a fondo sobre Git y Github, le pegues un ojo a estas fuentes que son buenisimas.
 
 ---
 
-## * ¿Qué es Git y por qué te salva la vida?
+### * ¿Qué es Git y por qué te salva la vida?
 
 Imaginate que estás escribiendo un código clave. Sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO.zip`. Lo tenes que pedir.
 
@@ -24,7 +23,7 @@ Imaginate que estás escribiendo un código clave. Sin Git, si te mandás una mo
 
 ---
 
-## * Como usar git: Add y Commit
+### * Como usar git: Add y Commit
 
 Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
@@ -41,8 +40,8 @@ Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
 ---
 
-## * Conceptos que tenés que conocer sí o sí 
-## _(lo que esta con signo de exclamacion lo vamos a volver a ver mas adelante, no te hagas la cabeza si no lo cazas de una)_
+### * Conceptos que tenés que conocer sí o sí 
+#### _(lo que esta con signo de exclamacion lo vamos a volver a ver mas adelante, no te hagas la cabeza si no lo cazas de una)_
 
 *   **Local:** Tu compu.
 *   **Repo (Repositorio):** Es la carpeta del proyecto que Git está vigilando.
@@ -76,7 +75,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-## * Diferencias Git vs GitHub...
+### * Diferencias Git vs GitHub...
 
 
 | Aspecto | Git | GitHub |
@@ -104,7 +103,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-## * Como conectar tu repo local con GitHub
+### * Como conectar tu repo local con GitHub
 
 1.  Para poder subir tu repo a GitHub tenes que Crear un repositorio en la web y linkiarlo a tu repo local con:
   -> `git remote add origin "el link de tu origen"`
@@ -121,7 +120,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-## * Los comandos que se usan para sincronizar _(utiles si trabajas con mas personas en un repo)_
+### * Los comandos que se usan para sincronizar _(utiles si trabajas con mas personas en un repo)_
 
 
 | Comando | Qué hace? | Toca mis archivos? |
@@ -134,7 +133,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-## * Cómo se lee el historial (El dibujito de las ramas)
+### * Cómo se lee el historial (El dibujito de las ramas)
 
 Git muestra el historial como un **grafo** (un mapa de estaciones).
 
@@ -160,14 +159,14 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-## * Git Stash 📦
+### * Git Stash 📦
 
-### Algo que te puede pasar es que estes laburando en una funcionalidad, con todo el código por la mitad y de repente te tenes que poner a laburar en otra cosa mas urgente
+#### Algo que te puede pasar es que estes laburando en una funcionalidad, con todo el código por la mitad y de repente te tenes que poner a laburar en otra cosa mas urgente
 
 > - No querés hacer un commit porque el código está roto o incompleto. Ahí es donde entra el **`git stash`**. 
 >   Hacés lo urgente, y después seguis con lo que estabas laburando.
 
-### Cómo se usa?
+#### Cómo se usa?
 
 1. **`git stash`** (O `git stash save "mensaje"`)
    * Agarrás todos tus cambios que no guardaste (los que están en `add` o sueltos) y los guardás en una pila secreta.
@@ -197,15 +196,15 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-## * Mi Workflow Profesional (El paso a paso "Limpio")
+### * Mi Workflow Profesional (El paso a paso "Limpio")
 
 Para que el historial no sea un bardo y quede cheto, yo sigo este orden:
 
-### Paso A: Preparo mis cambios
+#### Paso A: Preparo mis cambios
 1.  `git add .` (Meto los cambios en el stage).
 2.  `git commit -m "feat: agregué el login"`
 
-### Paso B: Me fijo qué hicieron los demás (Sincronización)
+#### Paso B: Me fijo qué hicieron los demás (Sincronización)
 3.  **`git fetch origin`**
     *(Me bajo lo que hicieron los pibes mientras yo estaba en la mía).*
 4.  **`git diff HEAD..origin/main`**
@@ -213,14 +212,14 @@ Para que el historial no sea un bardo y quede cheto, yo sigo este orden:
 5.  **`git rebase origin/main`**
     *(Git saca mis commits, pone lo nuevo de los demás y después pega mis cambios arriba. Queda una línea recta hermosa!)*
 
-### Paso C: Si salta un conflicto (No entres en pánico)
+#### Paso C: Si salta un conflicto (No entres en pánico)
 Si el rebase se traba:
 1.  Abro el archivo que llora y elijo qué código queda.
 2.  `git add <archivo_arreglado>`.
 3.  `git rebase --continue` (Listo! Seguimos camino).
 *Si se fue todo al pasto y no sabés qué hiciste: `git rebase --abort` y lo ves despues cuando te de el bocho.*
 
-### Paso D: Lo subo
+#### Paso D: Lo subo
 6.  **`git push origin mi-rama`**
 
 ---
@@ -233,7 +232,7 @@ Si el rebase se traba:
 
 ---
 
-## * Comandos que te salvan las papas
+### * Comandos que te salvan las papas
 
 
 | Si queres... | Usas... |

@@ -9,9 +9,9 @@ Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo y
 
 ---
 
-### * ¿Qué es Git y por qué te salva la vida?
+### * ¿Qué es Git y por qué es clave?
 
-Imaginate que estás escribiendo un código clave. Sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO.zip`. Lo tenes que pedir.
+Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO.zip`. Lo tenes que pedir.
 
 **Git es como el sistema de checkpoints de un juegito:**
 *   **Sirve para:** Sacar "fotos" (snapshots) del proyecto.

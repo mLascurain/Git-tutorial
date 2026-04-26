@@ -108,7 +108,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 2.  Una vez hiciste eso poder pushear tus cambios commiteados al remote haciendo: `git push origin main` 
   - Esto sube tus cambios a la branch main _(en un toque vemos que es una branch)_
 
- [Crear repo](file:///C:/Users/kiw/notes/Git-tutorial/assets/create-repo.jpg)
+<img width="552" height="345" alt="create-repo" src="https://github.com/user-attachments/assets/db81a56f-b649-4c9b-82cd-dde9582f8169" />
 
 > [!IMPORTANT] Esto es clave:
 > El verdadero poder de Git entra cuando lo laburas junto a GitHub _(Hay otras alternativas como GitLab, Bitbucket entre otros)_. 

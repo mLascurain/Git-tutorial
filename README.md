@@ -1,5 +1,5 @@
 
- # 🚀 Git para salames _(como yo)_: Para que no te mandes ninguna macana
+ # 🚀 Git para salames _(como yo)_: <br>Para que no te mandes ninguna macana
 
 Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas. <br>La idea es que si no cazás una de Git, con esto salgas jugando.
  

@@ -1,16 +1,16 @@
 
  # 🚀 Git para salames _(como yo)_: Para que no te mandes ninguna macana
 
-> Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas.
-> La idea es que si no cazás una de Git, con esto salgas jugando.
-
-> [!note] Fuentes
+>### Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas. <br><br>La idea es que si no cazás una de Git, con esto salgas jugando.
+ 
+> [!note]
+> ### Fuentes:<br>
 > Utilice el libro de [Pro Git](https://git-scm.com/book/es/v2) y la [documentacion oficial de Git](https://git-scm.com/docs) para poder armar este tutorial. 
 > Recomiendo que si queres seguir estudiando mas a fondo sobre Git y Github, le pegues un ojo a estas fuentes que son buenisimas.
 
 ---
 
-## 0. ¿Qué es Git y por qué te salva la vida?
+## * ¿Qué es Git y por qué te salva la vida?
 
 Imaginate que estás escribiendo un código clave. Sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO.zip`. Lo tenes que pedir.
 
@@ -58,10 +58,10 @@ Antes de poder sacarle una "foto" a tu projecto, tenes que hacer esto.
 1. **`git add <archivo>` (guardas los archivos):** 
    Acá elegís qué archivos querés guardar. 
    * *Estado:* **Staging**. Los archivos están "en espera".
-
-> [!tip] Tip para guardar varios archivos:
+> [!TIP]
+> ### Como agregar varios archivos al stage:
 > Podes usar "`git add .`" en lugar del nombre de los archivos para guardar todos los archivos modificados del repo
-> Y si te arrepentis podes tirar `git reset` para sacar los archivos del staging area
+> <br>Y si te arrepentis podes tirar `git reset` para sacar los archivos del staging area
 
 2. **`git commit -m "descripción"`:** 
    Acá confirmás que lo que está guardado, le sacas la "foto". 
@@ -69,7 +69,8 @@ Antes de poder sacarle una "foto" a tu projecto, tenes que hacer esto.
 
 Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyecto
 
-> [!note] Commit Rollback:
+> [!note]
+> ### Commit Rollback:
 > Si queres volver a algun commit antiguo podes usar `git log --oneline` para ver la lista de commits
 > Y despues `git reset --hard <commit-hash>` para hacer el rollback hacia ese commit
 
@@ -88,12 +89,14 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-> [!note] Configuracion:
+> [!note]
+> ### Configuracion:
 > Para poder subir tu proyecto a github tenes que configurar tu terminal para que tengas acceso a tu cuenta de GitHub
 > Si estas en windows podes usar winget para instalar el [CLI de Github](https://github.com/cli/cli/blob/trunk/docs/install_windows.md#winget)
 > Una vez instalado podes hacer `gh auth login` y seguir los pasos, eligiendo HTTPS como protocolo y logeandote desde el browser.
 
-> [!note] SSH Auth
+> [!note]
+> ### SSH Auth _(Recomendado)_
 > Si preferis una opcion mas segura podes optar por configurarlo con una clave de ssh.
 > Generala con este comando `ssh-keygen -t ed25519 -C "tu-mail@tu-mail.com"` 
 > Arrancas tu agente de ssh y lo agregas con `eval "$(ssh-agent -s)"` y despues `ssh-add ~/.ssh/id_ed25519`
@@ -111,7 +114,8 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 <img width="552" height="345" alt="create-repo" src="https://github.com/user-attachments/assets/db81a56f-b649-4c9b-82cd-dde9582f8169" />
 
-> [!IMPORTANT] Esto es clave:
+> [!IMPORTANT]
+> ### Esto es clave:
 > El verdadero poder de Git entra cuando lo laburas junto a GitHub _(Hay otras alternativas como GitLab, Bitbucket entre otros)_. 
 > Ademas es fundamental cuando lo laburas con otros en tu equipo
 
@@ -221,7 +225,8 @@ Si el rebase se traba:
 
 ---
 
-> [!CAUTION] IMPORTANTE SOBRE EL USO DE REBASE
+> [!CAUTION]
+> ### IMPORTANTE SOBRE EL USO DE REBASE
 > **NUNCA hagas rebase de commits que ya subiste al servidor.**
 > El rebase "reescribe la historia". Si vos ya subiste algo y después le hacés un rebase, le vas a romper la cabeza a tus compañeros cuando quieran bajar tus cambios. 
 > Hacelo siempre **antes** del push, en la intimidad de tu local.

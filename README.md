@@ -11,7 +11,26 @@ Armé este repo para explicar qué onda Git, para qué sirve, cómo laburo yo e 
 
 ---
 
-### 1~ ¿Qué es Git y por qué es clave? 🗝️
+## Índice de Contenidos 📖
+
+1. [Qué es Git y por qué es clave](#1-qué-es-git-y-por-qué-es-clave)
+2. [Cómo usar Git: Add y Commit](#2-cómo-usar-git-add-y-commit)
+3. [Conceptos que tenés que conocer sí o sí](#3-conceptos-que-tenés-que-conocer-sí-o-sí)
+4. [Diferencias Git vs GitHub](#4-diferencias-git-vs-github)
+5. [Cómo conectar tu repo local con GitHub](#5-cómo-conectar-tu-repo-local-con-github)
+6. [Comandos para sincronizar](#6-comandos-para-sincronizar)
+7. [Cómo se lee el historial](#7-cómo-se-lee-el-historial)
+8. [Git Stash](#8-git-stash)
+9. [Mi workflow profesional](#9-mi-workflow-profesional)
+10. [Comandos útiles](#10-comandos-útiles)
+11. [Reset vs Revert](#11-reset-vs-revert)
+12. [Cherry pick](#12-cherry-pick)
+13. [Visual reference](#13-visual-reference)
+14. [Cuestionario de práctica](#14-cuestionario-de-práctica)
+
+---
+
+### 1. Qué es Git y por qué es clave? 🗝️
 
 Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO_(1).zip`. Lo tenes que pedir.
 
@@ -25,7 +44,7 @@ Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o te
 
 ---
 
-### 2~ Como usar git: Add y Commit 📚
+### 2. Como usar git: Add y Commit 📚
 
 Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
@@ -42,7 +61,7 @@ Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
 ---
 
-### 3~ Conceptos que tenés que conocer sí o sí 👀
+### 3. Conceptos que tenés que conocer sí o sí 👀
 #### _(lo que esta con signo de exclamacion lo vamos a volver a ver mas adelante, no te hagas la cabeza si no lo cazas de una)_
 
 *   **Local:** Tu compu.
@@ -77,7 +96,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### 4~ Diferencias Git vs GitHub... 🧩
+### 4. Diferencias Git vs GitHub... 🧩
 
 
 | Aspecto | Git | GitHub |
@@ -105,7 +124,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### 5~ Como conectar tu repo local con GitHub 🌐
+### 5. Como conectar tu repo local con GitHub 🌐
 
 1.  Para poder subir tu repo a GitHub tenes que Crear un repositorio en la web y linkiarlo a tu repo local con:
   -> `git remote add origin "el link de tu origen"`
@@ -122,8 +141,9 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### 6~ Los comandos que se usan para sincronizar _(utiles si trabajas con mas personas en un repo)_ 
+### 6. Los comandos que se usan para sincronizar
 
+#### _(utiles si trabajas con mas personas en un repo)_ 
 
 | Comando | Qué hace? | Toca mis archivos? |
 | :--- | :--- | :--- |
@@ -161,7 +181,7 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-### 8~ Git Stash 📦
+### 8. Git Stash 📦
 
 #### Algo que te puede pasar es que estes laburando en una funcionalidad, con todo el código por la mitad y de repente te tenes que poner a laburar en otra cosa mas urgente
 
@@ -198,7 +218,7 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-### 9~ Mi Workflow Profesional (El paso a paso "Limpio") ✨
+### 9. Mi Workflow Profesional (El paso a paso "Limpio") ✨
 
 Para que el historial no sea un bardo y quede cheto, yo sigo este orden:
 
@@ -234,7 +254,7 @@ Si el rebase se traba:
 
 ---
 
-### 10~ Comandos utiles 🪛
+### 10. Comandos utiles 🪛
 
 
 | Si queres... | Usas... |
@@ -247,7 +267,7 @@ Si el rebase se traba:
 
 ---
 
-### 11~ Reset vs Revert ⏪
+### 11. Reset vs Revert ⏪
 
 ### El comando `git reset` tiene dos flags claves que tenes que saber.
 
@@ -267,18 +287,54 @@ Si el rebase se traba:
 
 ---
 
-### 12~ Cherry pick 🍒
+### 12. Cherry pick 🍒
   -  Crea un nuevo commit con los cambios que el commit indicado introdujo. Para evitar commits vacios, el cherry pick aplica por defecto los cambios que la rama no tiene
 
 > Podes usarlo utilizando `git cherry-pick (commit)`.
 
 ---
 
-### 13~ Visual reference: Merge, Cherry Pick & Rebase
+### 13. Visual reference: Merge, Cherry Pick & Rebase
 
 <img width="1383" height="788" alt="image" src="https://github.com/user-attachments/assets/760b423e-fe5a-40ef-99c1-e31c2d1f67c9" />
 <br>
 
 > Source: [The Modern Coder Video on Cherry Picking](https://www.youtube.com/watch?v=i657Bg_HAWI)
+
+---
+
+### 14. Cuestionario de práctica 📝
+
+Poné a prueba lo que aprendiste antes de terminar con el tutorial. Hace click en cada pregunta para ver la respuesta!
+
+<details>
+  <summary><b>1. Si modifiqué un archivo pero todavía no hice "git add", ¿en qué estado se encuentra?</b></summary>
+  <br>
+  Se encuentra en el <b>Working Directory</b> (estado "modified"). Git sabe que cambió, pero aún no está preparado para la foto.
+</details>
+
+<details>
+  <summary><b>2. ¿Cuál es la diferencia principal entre "git pull" y "git fetch"?</b></summary>
+  <br>
+  <code>git fetch</code> solo descarga las novedades a una carpeta invisible sin tocar tus archivos. <code>git pull</code> hace el fetch y además intenta pegarlos (merge) en tu código de una.
+</details>
+
+<details>
+  <summary><b>3. ¿Por qué se dice que el "rebase" reescribe la historia?</b></summary>
+  <br>
+  Porque el rebase agarra tus commits, los "despega" y los vuelve a "pegar" encima de lo nuevo. Esto cambia los IDs (hashes) de los commits, por eso nunca hay que hacerlo en ramas donde laburan otros.
+</details>
+
+<details>
+  <summary><b>4. Tengo código a medio terminar y surge una urgencia en otra rama. ¿Qué comando uso?</b></summary>
+  <br>
+  Usas <code>git stash</code> para guardar tus cambios en una "pila secreta" y dejar la rama limpia para moverte.
+</details>
+
+<details>
+  <summary><b>5. ¿Qué diferencia hay entre un "reset --hard" y un "reset --soft"?</b></summary>
+  <br>
+  El <code>--soft</code> te vuelve atrás en el tiempo pero te deja los archivos como los tenías (no perdés el laburo). El <code>--hard</code> borra todo y deja la carpeta exactamente como estaba en ese commit antiguo.
+</details>
 
 ---

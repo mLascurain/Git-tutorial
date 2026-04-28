@@ -11,7 +11,7 @@ Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo y
 
 ---
 
-### * ¿Qué es Git y por qué es clave?
+### 1~ ¿Qué es Git y por qué es clave? 🗝️
 
 Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO_(1).zip`. Lo tenes que pedir.
 
@@ -25,7 +25,7 @@ Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o te
 
 ---
 
-### * Como usar git: Add y Commit
+### 2~ Como usar git: Add y Commit 📚
 
 Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
@@ -42,7 +42,7 @@ Antes de arrancar a usarlo tenes que conocer los tres estados en git:
 
 ---
 
-### * Conceptos que tenés que conocer sí o sí 
+### 3~ Conceptos que tenés que conocer sí o sí 👀
 #### _(lo que esta con signo de exclamacion lo vamos a volver a ver mas adelante, no te hagas la cabeza si no lo cazas de una)_
 
 *   **Local:** Tu compu.
@@ -77,7 +77,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### * Diferencias Git vs GitHub...
+### 4~ Diferencias Git vs GitHub... 🧩
 
 
 | Aspecto | Git | GitHub |
@@ -105,7 +105,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### * Como conectar tu repo local con GitHub
+### 5~ Como conectar tu repo local con GitHub 🌐
 
 1.  Para poder subir tu repo a GitHub tenes que Crear un repositorio en la web y linkiarlo a tu repo local con:
   -> `git remote add origin "el link de tu origen"`
@@ -122,7 +122,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### * Los comandos que se usan para sincronizar _(utiles si trabajas con mas personas en un repo)_
+### 6~ Los comandos que se usan para sincronizar _(utiles si trabajas con mas personas en un repo)_ 
 
 
 | Comando | Qué hace? | Toca mis archivos? |
@@ -135,7 +135,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### * Cómo se lee el historial (El dibujito de las ramas) 🪵
+### 7~ Cómo se lee el historial (El dibujito de las ramas) 🪵
 
 Git muestra el historial como un **grafo** (un mapa de estaciones).
 
@@ -161,7 +161,7 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-### * Git Stash 📦
+### 8~ Git Stash 📦
 
 #### Algo que te puede pasar es que estes laburando en una funcionalidad, con todo el código por la mitad y de repente te tenes que poner a laburar en otra cosa mas urgente
 
@@ -198,7 +198,7 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 
 ---
 
-### * Mi Workflow Profesional (El paso a paso "Limpio")
+### 9~ Mi Workflow Profesional (El paso a paso "Limpio") ✨
 
 Para que el historial no sea un bardo y quede cheto, yo sigo este orden:
 
@@ -234,7 +234,7 @@ Si el rebase se traba:
 
 ---
 
-### * Comandos utiles
+### 10~ Comandos utiles 🪛
 
 
 | Si queres... | Usas... |
@@ -247,7 +247,7 @@ Si el rebase se traba:
 
 ---
 
-### Reset vs Revert ⏪
+### 11~ Reset vs Revert ⏪
 
 ### El comando `git reset` tiene dos flags claves que tenes que saber.
 
@@ -267,9 +267,15 @@ Si el rebase se traba:
 
 ---
 
-### Cherry pick 🍒
+### 12~ Cherry pick 🍒
   -  Crea un nuevo commit con los cambios que el commit indicado introdujo. Para evitar commits vacios, el cherry pick aplica por defecto los cambios que la rama no tiene
 
 > Podes usarlo utilizando `git cherry-pick (commit)`.
+
+---
+
+### 13~ Visual reference: Merge, Cherry Pick & Rebase
+
+<img width="1383" height="788" alt="image" src="https://github.com/user-attachments/assets/760b423e-fe5a-40ef-99c1-e31c2d1f67c9" />
 
 ---

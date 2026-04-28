@@ -13,20 +13,20 @@ Armé este repo para explicar qué onda Git, para qué sirve, cómo laburo yo e 
 
 ## Índice de Contenidos 📖
 
-1. [Qué es Git y por qué es clave](#1-qué-es-git-y-por-qué-es-clave)
-2. [Cómo usar Git: Add y Commit](#2-cómo-usar-git-add-y-commit)
-3. [Conceptos que tenés que conocer sí o sí](#3-conceptos-que-tenés-que-conocer-sí-o-sí)
-4. [Diferencias Git vs GitHub](#4-diferencias-git-vs-github)
-5. [Cómo conectar tu repo local con GitHub](#5-cómo-conectar-tu-repo-local-con-github)
-6. [Comandos para sincronizar](#6-comandos-para-sincronizar)
-7. [Cómo se lee el historial](#7-cómo-se-lee-el-historial)
-8. [Git Stash](#8-git-stash)
-9. [Mi workflow profesional](#9-mi-workflow-profesional)
-10. [Comandos útiles](#10-comandos-útiles)
-11. [Reset vs Revert](#11-reset-vs-revert)
-12. [Cherry pick](#12-cherry-pick)
-13. [Visual reference](#13-visual-reference)
-14. [Cuestionario de práctica](#14-cuestionario-de-práctica)
+1. [Qué es Git y por qué es clave](#-qué-es-git-y-por-qué-es-clave)
+2. [Cómo usar Git: Add y Commit](#-cómo-usar-git-add-y-commit)
+3. [Conceptos que tenés que conocer sí o sí](#-conceptos-que-tenés-que-conocer-sí-o-sí)
+4. [Diferencias Git vs GitHub](#-diferencias-git-vs-github)
+5. [Cómo conectar tu repo local con GitHub](#-cómo-conectar-tu-repo-local-con-github)
+6. [Comandos para sincronizar](#-comandos-para-sincronizar)
+7. [Cómo se lee el historial](#-cómo-se-lee-el-historial)
+8. [Git Stash](#-git-stash)
+9. [Mi workflow profesional](#-mi-workflow-profesional)
+10. [Comandos útiles](#-comandos-útiles)
+11. [Reset vs Revert](#-reset-vs-revert)
+12. [Cherry pick](#-cherry-pick)
+13. [Visual reference](#-visual-reference)
+14. [Cuestionario de práctica](#-cuestionario-de-práctica)
 
 ---
 

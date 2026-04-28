@@ -141,7 +141,7 @@ Git muestra el historial como un **grafo** (un mapa de estaciones).
 (Lo último que se hizo)
   *   7a2b3c4 (HEAD -> main) El "Merge": acá se une todo.
   |\  
-  | * 5e6f7g8 (rama-nueva) Acá estuvimos laburando. (antes de mergiar nos traemos los ultimos cambios de main)
+  | * 5e6f7g8 (rama-nueva) Antes de mergiar nos tenemos que traer los ultimos cambios de main
   | * 3h4i5j6 cambiamos los colores a un botón.
   | |
   * 1k2l3m4 Un compañero arregló un bug en la rama principal (main o master tipicamente).
@@ -275,7 +275,7 @@ Si el rebase se traba:
 ### 13~ Visual reference: Merge, Cherry Pick & Rebase
 
 <img width="1383" height="788" alt="image" src="https://github.com/user-attachments/assets/760b423e-fe5a-40ef-99c1-e31c2d1f67c9" />
-
+<br>
 > Source: [The Modern Coder Video on Cherry Picking](https://www.youtube.com/watch?v=i657Bg_HAWI)
 
 ---

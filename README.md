@@ -1,13 +1,11 @@
 
- # 🚀 Git Tutorial: <br>Para que no te mandes ninguna macana
+ # 🚀 Git Tutorial: Para que no te mandes ninguna macana
 
 Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme macanas. <br>La idea es que si no cazás una de Git, con esto salgas jugando.
  
 > Fuentes:<br>
 > Utilice el libro de [Pro Git](https://git-scm.com/book/es/v2) y la [documentacion oficial de Git](https://git-scm.com/docs) para poder armar este tutorial. 
 > Recomiendo que si queres seguir estudiando mas a fondo sobre Git y Github, le pegues un ojo a estas fuentes que son buenisimas.
-
-> By Matias Lascurain
 
 ---
 
@@ -277,5 +275,7 @@ Si el rebase se traba:
 ### 13~ Visual reference: Merge, Cherry Pick & Rebase
 
 <img width="1383" height="788" alt="image" src="https://github.com/user-attachments/assets/760b423e-fe5a-40ef-99c1-e31c2d1f67c9" />
+
+> Source: [The Modern Coder Video on Cherry Picking](https://www.youtube.com/watch?v=i657Bg_HAWI)
 
 ---

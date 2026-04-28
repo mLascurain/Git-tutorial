@@ -298,33 +298,38 @@ Si el rebase se traba:
 Poné a prueba lo que aprendiste antes de terminar con el tutorial. Hace click en cada pregunta para ver la respuesta!
 
 <details>
-  <summary><b>1. Si modifiqué un archivo pero todavía no hice "git add", ¿en qué estado se encuentra?</b></summary>
-  <br>
-  Se encuentra en el <b>Working Directory</b> (estado "modified"). Git sabe que cambió, pero aún no está preparado para la foto.
+  <summary><b>1. Si modifiqué un archivo pero todavía no hice "git add", en qué estado se encuentra?</b></summary>
+  🟢 Se encuentra en el <b>Working Directory</b> (estado "modified"). Git sabe que cambió, pero aún no está preparado para la foto. 🟢
 </details>
 
 <details>
-  <summary><b>2. ¿Cuál es la diferencia principal entre "git pull" y "git fetch"?</b></summary>
-  <br>
-  <code>git fetch</code> solo descarga las novedades a una carpeta invisible sin tocar tus archivos. <code>git pull</code> hace el fetch y además intenta pegarlos (merge) en tu código de una.
+  <summary><b>2. Cuál es la diferencia principal entre "git pull" y "git fetch"?</b></summary>
+  🟢 <code>git fetch</code> solo descarga las novedades a una carpeta invisible sin tocar tus archivos. <code>git pull</code> hace el fetch y además intenta pegarlos (merge) en tu código de una. 🟢
 </details>
 
 <details>
-  <summary><b>3. ¿Por qué se dice que el "rebase" reescribe la historia?</b></summary>
-  <br>
-  Porque el rebase agarra tus commits, los "despega" y los vuelve a "pegar" encima de lo nuevo. Esto cambia los IDs (hashes) de los commits, por eso nunca hay que hacerlo en ramas donde laburan otros.
+  <summary><b>3. Por qué se dice que el "rebase" reescribe la historia?</b></summary>
+  🟢 Porque el rebase agarra tus commits, los "despega" y los vuelve a "pegar" encima de lo nuevo. Esto cambia los IDs (hashes) de los commits, por eso nunca hay que hacerlo en ramas donde laburan otros. 🟢
 </details>
 
 <details>
-  <summary><b>4. Tengo código a medio terminar y surge una urgencia en otra rama. ¿Qué comando uso?</b></summary>
-  <br>
-  Usas <code>git stash</code> para guardar tus cambios en una "pila secreta" y dejar la rama limpia para moverte.
+  <summary><b>4. Tengo código a medio terminar y surge una urgencia en otra rama. Qué comando uso?</b></summary>
+  🟢 Usas <code>git stash</code> para guardar tus cambios en una "pila secreta" y dejar la rama limpia para moverte. 🟢
 </details>
 
 <details>
-  <summary><b>5. ¿Qué diferencia hay entre un "reset --hard" y un "reset --soft"?</b></summary>
-  <br>
-  El <code>--soft</code> te vuelve atrás en el tiempo pero te deja los archivos como los tenías (no perdés el laburo). El <code>--hard</code> borra todo y deja la carpeta exactamente como estaba en ese commit antiguo.
+  <summary><b>5. Qué diferencia hay entre un "reset --hard" y un "reset --soft"?</b></summary>
+  🟢 El <code>--soft</code> te vuelve atrás en el tiempo pero te deja los archivos como los tenías (no perdés el laburo). El <code>--hard</code> borra todo y deja la carpeta exactamente como estaba en ese commit antiguo. 🟢
+</details>
+
+<details>
+  <summary><b>6. Cuál es la función de un objeto 'tree' (árbol)?</b></summary>
+  🟢 Representar la estructura de directorios y nombres de archivos 🟢
+</details>
+
+<details>
+  <summary><b>7. Qué comando usarías para ver exactamente qué cambios has hecho en tus archivos que todavía no han sido preparados (staged)?</b></summary>
+  🟢 Git diff 🟢
 </details>
 
 ---

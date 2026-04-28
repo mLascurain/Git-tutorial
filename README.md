@@ -1,17 +1,19 @@
 
- # 🚀 Git para salames _(como yo)_: <br>Para que no te mandes ninguna macana
+ # 🚀 Git Tutorial: <br>Para que no te mandes ninguna macana
 
-Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme cagadas. <br>La idea es que si no cazás una de Git, con esto salgas jugando.
+Armé este machete para explicar qué onda Git, para qué sirve y cómo laburo yo para no mandarme macanas. <br>La idea es que si no cazás una de Git, con esto salgas jugando.
  
 > Fuentes:<br>
 > Utilice el libro de [Pro Git](https://git-scm.com/book/es/v2) y la [documentacion oficial de Git](https://git-scm.com/docs) para poder armar este tutorial. 
 > Recomiendo que si queres seguir estudiando mas a fondo sobre Git y Github, le pegues un ojo a estas fuentes que son buenisimas.
 
+> By Matias Lascurain
+
 ---
 
 ### * ¿Qué es Git y por qué es clave?
 
-Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO.zip`. Lo tenes que pedir.
+Imaginate que estás codeando sin Git, si te mandás una moco, perdés todo o terminás con archivos tipo: `app_FINAL_esta_si_v3_PROMETO_(1).zip`. Lo tenes que pedir.
 
 **Git es como el sistema de checkpoints de un juegito:**
 *   **Sirve para:** Sacar "fotos" (snapshots) del proyecto.
@@ -96,7 +98,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 > [!note]
 > ### SSH Auth _(Recomendado)_
-> Si preferis una opcion mas segura podes optar por configurarlo con una clave de ssh.
+> Si preferis una opcion mas segura podes optar por configurarlo con una clave de ssh _(este paso a paso funciona para linux/wsl pero lo podes activar en cualquier OS)_.
 > Generala con este comando `ssh-keygen -t ed25519 -C "tu-mail@tu-mail.com"` 
 > Arrancas tu agente de ssh y lo agregas con `eval "$(ssh-agent -s)"` y despues `ssh-add ~/.ssh/id_ed25519`
 > Una vez que hiciste eso, copia tu clave publica con `cat ~/.ssh/id_ed25519.pub` y agregala en tus [Settings de GitHub](https://github.com/settings/keys)
@@ -133,7 +135,7 @@ Y ahora tenes tu nueva "foto" ___(correctamente llamado commit)___ de tu proyect
 
 ---
 
-### * Cómo se lee el historial (El dibujito de las ramas)
+### * Cómo se lee el historial (El dibujito de las ramas) 🪵
 
 Git muestra el historial como un **grafo** (un mapa de estaciones).
 
@@ -226,13 +228,13 @@ Si el rebase se traba:
 
 > [!CAUTION]
 > ### IMPORTANTE SOBRE EL USO DE REBASE
-> **NUNCA hagas rebase de commits que ya subiste al servidor.**
+> **NUNCA hagas rebase en ramas publicas.**
 > El rebase "reescribe la historia". Si vos ya subiste algo y después le hacés un rebase, le vas a romper la cabeza a tus compañeros cuando quieran bajar tus cambios. 
-> Hacelo siempre **antes** del push, en la intimidad de tu local.
+> Hacelo siempre **antes** del push, en la intimidad de tu local en una branch que solo estas laburando vos.
 
 ---
 
-### * Comandos que te salvan las papas
+### * Comandos utiles
 
 
 | Si queres... | Usas... |
@@ -240,5 +242,34 @@ Si el rebase se traba:
 | **Ver el mapa de ramas de colores** | `git log --oneline --graph --all` |
 | **Ver qué esta guardado en el stage** | `git status` |
 | **Comparar el laburo con el del origin** | `git diff HEAD..origin/main` |
+| **Muestra el historial de las acciones de un repo* | `git reflog` |
 
 
+---
+
+### Reset vs Revert ⏪
+
+### El comando `git reset` tiene dos flags claves que tenes que saber.
+
+  -  El reset "soft" mueve tu HEAD a el commit que le indiques. Este mantiene los archivos modificados desde que se hizo el commit, es decir, los cambios posteriores
+
+  -  El reset "hard" este como el anterior, mueve tu HEAD hacia el commit que le indiques.
+     La diferencia es que este borra todos los commits posteriores que se han hecho desde el commit que le indicaste
+
+> Podes usarlos utilizando `git reset --soft HEAD~2` o `git reset --hard HEAD~2` dependiendo de tu caso concreto.<br>
+> _(en este ejemplo estamos volviendo hacia atras 2 commits detras del HEAD "~2")_
+
+### El comando `git revert` es mas sencillo
+
+  -  Este agrega un commit a el historial de commits que revierte el ultimo commit que se haya hecho
+
+> Podes usarlo utilizando `git revert (commit)`.
+
+---
+
+### Cherry pick 🍒
+  -  Crea un nuevo commit con los cambios que el commit indicado introdujo. Para evitar commits vacios, el cherry pick aplica por defecto los cambios que la rama no tiene
+
+> Podes usarlo utilizando `git cherry-pick (commit)`.
+
+---
